@@ -1,0 +1,99 @@
+.container-fluid{
+    padding-top: 10px;
+   /*background-image: url('/assets/petal1.jpg');*/
+    height: 800px; 
+  /*  background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;*/
+    width: 100%;
+    font-family: 'Shadows Into Light', cursive;
+}
+h2{
+    font-family: 'Shadows Into Light', cursive;
+}
+li{
+    list-style: none;
+}
+.first{
+    height: 100vh;
+}
+.second{
+   height: 100vh;
+}
+.third{
+  height: 100vh;
+}
+.kahuna{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.row-1{
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    text-align: left;
+    background-color: mistyrose;
+}
+.row-2{
+    border-radius: 15px;
+    text-align: left; 
+    padding-top: 10px;
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    background-color: mistyrose;
+}
+.row-3{
+    border-radius: 15px;
+    text-align: left;
+    padding-top: 10px;
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    background-color: mistyrose;
+}
+span{
+    color: silver;
+    font-size: 14px;
+}
+.span2{
+    color: black;
+}
+
+.btn-secondary{
+    color: pink;
+    background-color: grey;
+
+}
+.space{
+    padding-left: 3px;
+}
+
+.btn-light{
+    background-color: mistyrose;
+    color: black;
+    margin-top: 5px;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+}
+
+.contacts{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+

@@ -1,0 +1,18 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<div class="container">
+    <div class="content-container">
+      <h2>Log In</h2>
+  
+      <input [(ngModel)]="email" placeholder="example@petalmail.com" /><br>
+      <input [(ngModel)]="password" type="password" placeholder="password" /><br><br>
+  
+      <button type="button" class="btn btn-warning" (click)="logIn()">Log In</button>
+  
+      <p>Don't have an account? Click <a [routerLink]="'/register'">here</a> to register.</p>
+  
+      <p class="error-message">{{ errorMsg }}</p>
+    </div>
+  </div>

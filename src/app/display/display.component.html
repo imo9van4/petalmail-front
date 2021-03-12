@@ -1,0 +1,15 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<div class= "container-fluid">
+    <div>
+    <div *ngFor="let email of emails">
+      <strong>From:</strong> {{ email.sender }}<br>
+      <strong>To:</strong> {{ email.recipient }}<br><br> 
+     <strong>Subject: {{ email.subject }} </strong><br><br>
+      <strong>Message:</strong> {{ email.body }}<br><br>
+    </div>
+  </div>
+  
+</div>

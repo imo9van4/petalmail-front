@@ -1,0 +1,88 @@
+.container-fluid{
+    padding-top: 10px;
+    background-image: url('/assets/petal4.jpg');
+    height: 800px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    font-family: 'Shadows Into Light', cursive;
+}
+h2{
+    font-family: 'Shadows Into Light', cursive;
+}
+li{
+    list-style: none;
+}
+.first{
+    height: 100vh;
+}
+.second{
+   height: 100vh;
+}
+.third{
+  height: 100vh;
+}
+.row-kahuna{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+/*
+.row-1{
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    text-align: left;
+    background-color: mistyrose;
+}
+.row-2{
+    border-radius: 15px;
+    text-align: left; 
+    padding-top: 10px;
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    background-color: mistyrose;
+}
+.row-3{
+    border-radius: 15px;
+    text-align: left;
+    padding-top: 10px;
+    box-shadow: 3px 3px 1px 0px rgba(0,0,0,0.75);
+    background-color: mistyrose;
+}*/
+span{
+    color: rgb(117, 70, 192);
+    font-size: 14px;
+}
+.span2{
+    color: black;
+}
+
+.btn-secondary{
+    color: pink;
+    background-color: grey;
+}
+.space{
+    padding-left: 3px;
+}
+
+.btn-light{
+    background-color: mistyrose;
+    color: black;
+    margin-top: 5px;
+}
+
+.saved{
+    text-align-last: left;
+    font-size: 16px;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+}
+
+.emailButton{
+    width: 100%;
+    text-align-last: left;
+    background-color: mistyrose;
+    border-radius: 15px;
+}

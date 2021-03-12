@@ -1,0 +1,24 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+  </style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<div class="container">
+    <div class="content-container">
+      <h2>Register for Your PetalMail Account</h2>
+  
+      <form [formGroup]="registerForm" class="form-container">
+        
+  
+        <input formControlName="username" placeholder="username" />
+  
+        <input formControlName="email" placeholder="example@petalmail.com" />
+  
+        <input formControlName="password" type="password" placeholder="password" /><br>
+  
+        <button type= "button" class= "btn btn-warning" (click)="register()">Register</button><br>
+        <p>Already have an account? Click <a [routerLink]="''">here</a> to login.</p>
+  
+        <p class="error-message">{{ errorMsg }}</p>
+      </form>
+    </div>
+  </div>

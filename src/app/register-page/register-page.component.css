@@ -1,0 +1,45 @@
+.container {
+    background-image: url('/assets/petal3.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+  }
+  
+  .content-container {
+    align-items: center;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.47);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    padding: 10px;
+    background-color: mistyrose;
+    border-radius: 15px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-warning{
+    background-color: rgb(39, 39, 146);
+    border-radius: 15px;
+  }
+
+  p{ 
+    font-size: 20px;
+    text-align: center;
+    color: yellow;
+  }
+
+  a:hover{
+    color: pink;
+  }
