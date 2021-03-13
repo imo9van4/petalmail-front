@@ -14,11 +14,11 @@
         <form [formGroup]="composeForm" class="form-container">
         
   
-           To:<input formControlName="recipient" placeholder="name@email.com" /><br>
+            <strong>To:</strong><input formControlName="recipient" placeholder="name@email.com" /><br><br>
       
-            Subject:<input formControlName="subject"/><br>
+            <strong>Subject:</strong><input formControlName="subject" placeholder="How ya doin?"/><br><br>
       
-            Message:<input formControlName="body" class= "input-large search-query" placeholder="Write your message here" rows="6"/><br>
+            <strong>Message:</strong><input formControlName="body" class="box" placeholder="Write your message here" rows="6"/><br><br>
 
             <button type="button" class="btn btn-warning" (click)="writeMessage(composeForm.value)">Send</button><br><hr>
             </form>

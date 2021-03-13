@@ -1,10 +1,10 @@
 .container-fluid{
     padding-top: 10px;
-   /*background-image: url('/assets/petal1.jpg');*/
+   background-image: url('/assets/petal4.jpg');
     height: 800px; 
-  /*  background-position: center; 
+  background-position: center; 
     background-repeat: no-repeat; 
-    background-size: cover;*/
+    background-size: cover;
     width: 100%;
     font-family: 'Shadows Into Light', cursive;
 }

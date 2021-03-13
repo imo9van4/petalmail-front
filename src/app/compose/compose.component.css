@@ -14,3 +14,19 @@
    background-color: pink;
 }
 
+.form-container{
+    display: grid;
+}
+
+.box{
+    height: 20vh;
+}
+
+button:hover{
+    background-color: pink;
+}
+
+input{
+    text-align-last: left;
+}
+
