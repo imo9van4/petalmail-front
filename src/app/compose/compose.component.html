@@ -5,11 +5,23 @@
 <div class="container-fluid">
     <!--Message-->
     <h1>Compose Message</h1>
-    To:<textarea class="form-control" rows="1"></textarea><br>
+    <!--To:<textarea class="form-control" rows="1"></textarea><br>
     Subject:<textarea class="form-control" rows="1"></textarea><br>
     Message:<textarea class="form-control" rows="6"></textarea><br>
-        <button type="button" class="btn btn-warning" (click)="addEmails()">Send</button><br><hr>
+        <button type="button" class="btn btn-warning" (click)="addEmails()">Send</button><br><hr>-->
 
+
+        <form [formGroup]="composeForm" class="form-container">
+        
+  
+           To:<input formControlName="recipient" placeholder="name@email.com" /><br>
+      
+            Subject:<input formControlName="subject"/><br>
+      
+            Message:<input formControlName="body" class= "input-large search-query" placeholder="Write your message here" rows="6"/><br>
+
+            <button type="button" class="btn btn-warning" (click)="writeMessage(composeForm.value)">Send</button><br><hr>
+            </form>
         <button [routerLink]="'/view-emails'" class="btn btn-primary">Back to Inbox</button><br><br>
         <button [routerLink]="''" class="btn btn-secondary">Logout</button>
 

@@ -9,6 +9,9 @@ import { JwtService } from './jwt.service';
   providedIn: 'root'
 })
 export class RestService {
+  
+  public singleMessage;
+  
 
   constructor(
     private readonly http: HttpClient,
@@ -49,4 +52,38 @@ addEmails(){
       )
       .toPromise()
   }
-}
+
+deleteMessage(id){
+  const jwt = this.jwtService.getJwt();
+
+  return this.http
+    .delete(
+      `${environment.apiUrl}/delete/emails/${id}`,
+      { headers: { Authorization: `Bearer ${jwt}` } }
+      )
+      .toPromise()
+  }
+
+viewMessage(id){
+  const jwt = this.jwtService.getJwt();
+
+  return this.http
+    .get(
+      `${environment.apiUrl}/view/emails${id}`,
+      { headers: { Authorization: `Bearer ${jwt}` } }
+      )
+      .toPromise()
+  }
+
+  writeMessage(body){
+    const jwt = this.jwtService.getJwt();
+
+    return this.http
+    .put(
+      `${environment.apiUrl}/write/emails`, body, {
+        headers: { Authorization: `Bearer ${jwt}` } }
+    )
+      .toPromise() 
+      }
+    
+  }

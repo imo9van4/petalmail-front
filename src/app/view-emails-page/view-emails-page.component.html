@@ -46,7 +46,7 @@
         
 <div>
   <div *ngFor="let email of emails">
-    <button class="emailButton" routerLink="/display">
+    <button class="emailButton" (click)="viewMessage(email.id)">
      
      <strong> {{ email.subject }} </strong>
      <span> {{ email.sender }} </span>
@@ -56,6 +56,5 @@
 
   </div>
 
-  <li *ngFor="let email of emails" (click)="onSelect(userEmail)"></li>
-  
+
 <router-outlet></router-outlet>

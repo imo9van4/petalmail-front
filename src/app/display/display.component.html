@@ -12,13 +12,16 @@
   <button [routerLink]="''" class="btn btn-light" id="navbutton">Logout</button><br><br>
   
     <div>
-    <div class = "words" *ngFor="let email of emails">
-      <strong>From:</strong> {{ email.sender }}<br>
-      <strong>To:</strong> {{ email.recipient }}<br><br> 
-     <strong>Subject: {{ email.subject }} </strong><br><br>
-      <strong>Message:</strong> {{ email.body }}<br><br>
-      <button [routerLink]="'/compose'" class="btn btn-warning">Reply</button><br><br><hr>
+ <div class = "words">
+      <strong>From:</strong> {{ singleMessage.sender }}<br>
+      <strong>To:</strong> {{ singleMessage.recipient }}<br><br> 
+     <strong>Subject: {{ singleMessage.subject }} </strong><br><br>
+      <strong>Message:</strong> {{ singleMessage.body }}<br><br>
+      <button [routerLink]="'/compose'" class="btn btn-warning">Reply</button><br><hr>
+      <button (click)="deleteMessage(singleMessage.id)" class="btn btn-danger">Delete</button><br><br>
     </div>
   </div>
+
+ 
   
 </div>

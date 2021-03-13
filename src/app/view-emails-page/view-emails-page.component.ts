@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestService } from '../rest.service';
-
+import { Router } from '@angular/router';
 import { Emails } from '../interfaces/emails.interface';
 
 @Component({
@@ -10,8 +10,9 @@ import { Emails } from '../interfaces/emails.interface';
 })
 export class ViewEmailsPageComponent implements OnInit {
   public emails: Emails[] = []
+  public singleMessage;
+  constructor(private readonly rest: RestService, private router: Router) { }
 
-  constructor(private readonly rest: RestService) { }
 
   ngOnInit(): void {
     this.rest.getUserEmails().then(res => {
@@ -21,4 +22,12 @@ export class ViewEmailsPageComponent implements OnInit {
   }
 
 
+  viewMessage(id){
+    this.rest.viewMessage(id).then(res=> {
+      this.singleMessage = res;
+      this.rest.singleMessage = this.singleMessage.data;
+      //console.log(this.rest.singleMessage);
+      this.router.navigate(["/display"]);
+    });
+  }
 }
